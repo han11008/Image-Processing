@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>M103040008</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="mainImg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="colorPalette">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hdr">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuOperation">
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <widget class="QMenu" name="menuFilter">
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <addaction name="actionOutlier"/>
+     <addaction name="actionMedian"/>
+     <addaction name="actionLowpass"/>
+     <addaction name="actionHighpass"/>
+     <addaction name="actionEdgeCrsp"/>
+     <addaction name="actionHighBoost"/>
+     <addaction name="actionGradient"/>
+    </widget>
+    <widget class="QMenu" name="menuCut">
+     <property name="title">
+      <string>Cut</string>
+     </property>
+     <addaction name="actionRect"/>
+     <addaction name="actionOval"/>
+    </widget>
+    <addaction name="actionRGB"/>
+    <addaction name="actionHSI"/>
+    <addaction name="actionGray"/>
+    <addaction name="actionShrink"/>
+    <addaction name="actionEnlarge"/>
+    <addaction name="actionRotate"/>
+    <addaction name="actionBrightness"/>
+    <addaction name="menuCut"/>
+    <addaction name="actionMW"/>
+    <addaction name="actionOverlap"/>
+    <addaction name="actionHistogram"/>
+    <addaction name="actionHistEq"/>
+    <addaction name="actionHistSpec"/>
+    <addaction name="actionNegative"/>
+    <addaction name="actionThresholding"/>
+    <addaction name="actionBPSlc"/>
+    <addaction name="actionCtrStr"/>
+    <addaction name="actionAddNoise"/>
+    <addaction name="menuFilter"/>
+    <addaction name="actionHuffman"/>
+    <addaction name="actionConnComp"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOperation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionRGB">
+   <property name="text">
+    <string>RGB</string>
+   </property>
+  </action>
+  <action name="actionHSI">
+   <property name="text">
+    <string>HSI</string>
+   </property>
+  </action>
+  <action name="actionEnlarge">
+   <property name="text">
+    <string>Enlarge</string>
+   </property>
+  </action>
+  <action name="actionShrink">
+   <property name="text">
+    <string>Shrink</string>
+   </property>
+  </action>
+  <action name="actionBPSlc">
+   <property name="text">
+    <string>Bit-plane slicing</string>
+   </property>
+  </action>
+  <action name="actionRotate">
+   <property name="text">
+    <string>Rotate</string>
+   </property>
+  </action>
+  <action name="actionCtrStr">
+   <property name="text">
+    <string>Contrast stretching</string>
+   </property>
+  </action>
+  <action name="actionOverlap">
+   <property name="text">
+    <string>Overlapping</string>
+   </property>
+  </action>
+  <action name="actionHistogram">
+   <property name="text">
+    <string>Histogram</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="text">
+    <string>Negative</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOutlier">
+   <property name="text">
+    <string>Outlier</string>
+   </property>
+  </action>
+  <action name="actionMedian">
+   <property name="text">
+    <string>Median</string>
+   </property>
+  </action>
+  <action name="actionLowpass">
+   <property name="text">
+    <string>Lowpass</string>
+   </property>
+  </action>
+  <action name="actionHighpass">
+   <property name="text">
+    <string>Highpass</string>
+   </property>
+  </action>
+  <action name="actionEdgeCrsp">
+   <property name="text">
+    <string>Edge crispening</string>
+   </property>
+  </action>
+  <action name="actionHighBoost">
+   <property name="text">
+    <string>High-boost</string>
+   </property>
+  </action>
+  <action name="actionGradient">
+   <property name="text">
+    <string>Gradient</string>
+   </property>
+  </action>
+  <action name="actionGray">
+   <property name="text">
+    <string>Gray level</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionThresholding">
+   <property name="text">
+    <string>Thresholding</string>
+   </property>
+  </action>
+  <action name="actionBrightness">
+   <property name="text">
+    <string>Brightness</string>
+   </property>
+  </action>
+  <action name="actionHistEq">
+   <property name="text">
+    <string>Histogram equalization</string>
+   </property>
+  </action>
+  <action name="actionHistSpec">
+   <property name="text">
+    <string>Histogram specification</string>
+   </property>
+  </action>
+  <action name="actionAddNoise">
+   <property name="text">
+    <string>Add noise</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionConnComp">
+   <property name="text">
+    <string>Connected component</string>
+   </property>
+  </action>
+  <action name="actionHuffman">
+   <property name="text">
+    <string>Huffman</string>
+   </property>
+  </action>
+  <action name="actionRect">
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionOval">
+   <property name="text">
+    <string>Ellipse</string>
+   </property>
+  </action>
+  <action name="actionMW">
+   <property name="text">
+    <string>Magic wand</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>subCtrStr</class>
+ <widget class="QWidget" name="subCtrStr">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Contrast stretching</string>
+  </property>
+  <widget class="QLabel" name="labelCut">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>50</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cutoff:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinBoxCutoff">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>6</y>
+     <width>60</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>49.990000000000002</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelUB">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>45</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Upper bound:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxUB">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>41</y>
+     <width>48</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="value">
+    <number>255</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelLB">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>45</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lower bound:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxLB">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>41</y>
+     <width>48</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>254</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOK">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>25</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonWB">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Write back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelImg">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>135</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOri">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>135</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelL">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>135</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Origin gray level</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelR">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>135</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Contrast stretching</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

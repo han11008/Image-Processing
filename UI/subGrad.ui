@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>subGrad</class>
+ <widget class="QWidget" name="subGrad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gradient</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="labelX">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>11</y>
+       <width>72</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horizontal</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelY">
+     <property name="geometry">
+      <rect>
+       <x>89</x>
+       <y>11</y>
+       <width>52</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vertical</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelZ">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>11</y>
+       <width>89</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>2-Dimesional</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelRoberts">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>34</y>
+       <width>54</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Roberts</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSobel">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>80</y>
+       <width>39</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sobel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPrewitt">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>126</y>
+       <width>51</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prewitt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelR2">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>57</y>
+       <width>89</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelR0">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>57</y>
+       <width>72</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelP2">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>149</y>
+       <width>89</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelS0">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>103</y>
+       <width>72</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelS1">
+     <property name="geometry">
+      <rect>
+       <x>89</x>
+       <y>103</y>
+       <width>52</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelS2">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>103</y>
+       <width>89</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelP1">
+     <property name="geometry">
+      <rect>
+       <x>89</x>
+       <y>149</y>
+       <width>52</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelP0">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>149</y>
+       <width>72</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelR1">
+     <property name="geometry">
+      <rect>
+       <x>89</x>
+       <y>57</y>
+       <width>52</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
